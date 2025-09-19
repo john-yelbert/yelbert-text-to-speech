@@ -85,10 +85,10 @@ Endpoint:
 POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/speech
 ```
 ## 🖼️ Screenshots
-![Frontend](./docs/Text-to-speech.drawio.png)
-![API Gateway](./docs/Text-to-speech.drawio.png)
-![Lambda](./docs/Text-to-speech.drawio.png)
-![S3 Buckets](./docs/Text-to-speech.drawio.png)
+![Frontend](./docs/lambda.png)
+![API Gateway](./docs/apigateway.png)
+![Lambda](./docs/lambda.png.png)
+![S3 Buckets](./docs/s3buckets.png)
 
 ## 🛠️ Troubleshooting
 
