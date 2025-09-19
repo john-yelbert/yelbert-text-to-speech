@@ -10,7 +10,7 @@ This project deploys a serverless **Text-to-Speech (TTS)** system on AWS using:
 ---
 
 ## 🚀 Architecture
-![System Architechture](./docs/Text-to-speechupdate.png)
+![System Architechture](./docs/text_to_speech.png)
 1. Client (e.g., web frontend) sends text to the API Gateway endpoint (`POST /speech`).
 2. API Gateway invokes the **Lambda function**.
 3. Lambda calls **Amazon Polly** to generate an MP3 file.
