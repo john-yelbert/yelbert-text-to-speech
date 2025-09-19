@@ -4,7 +4,7 @@ This project deploys a serverless **Text-to-Speech (TTS)** system on AWS using:
 - **Amazon Polly** (speech synthesis)
 - **AWS Lambda** (backend compute)
 - **Amazon API Gateway** (REST API with CORS support)
-- **Amazon S3** (audio file storage + optional static frontend hosting)
+- **Amazon S3** (audio file storage + static frontend hosting)
 - **Terraform** (infrastructure as code)
 
 ---
