@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yelbert Text-to-Speech</title>
+<title>Yelbert's Text-to-Speech</title>
 <style>
        * {
            box-sizing: border-box;
@@ -12,7 +12,7 @@
        }
        body {
            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           background: linear-gradient(135deg, #131212 0%, #131212 100%);
            min-height: 100vh;
            display: flex;
            align-items: center;
@@ -86,7 +86,7 @@
        .generate-btn {
            width: 100%;
            padding: 15px;
-           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           background: linear-gradient(135deg, #17181a 0%, #17181a 100%);
            color: white;
            border: none;
            border-radius: 8px;
@@ -146,7 +146,7 @@
        .download-btn {
            display: inline-block;
            padding: 10px 20px;
-           background: #28a745;
+           background: #17181a;
            color: white;
            text-decoration: none;
            border-radius: 5px;
@@ -185,7 +185,7 @@
 <body>
 <div class="container">
 <div class="header">
-<h1>Yelbert's Text-to-Speech Converter</h1>
+<h1>Text-to-Speech Converter</h1>
 <!-- <p>Convert your text into natural-sounding speech using AWS Polly</p> -->
 </div>
 <form id="ttsForm">
@@ -239,7 +239,7 @@
 </div>
 </div>
 <button type="submit" class="generate-btn" id="generateBtn">
-               🎵 Convert Text to Speech
+               Convert Text to Speech
 </button>
 </form>
 <div id="loading" class="loading">
@@ -253,7 +253,7 @@
 </div>
 <script>
        // Configuration - Replace with your actual API Gateway URL
-       const API_BASE_URL = 'https://0f4ybwhfl6.execute-api.us-east-1.amazonaws.com/prod/speech';
+       const API_BASE_URL = 'https://4pwd11e4mb.execute-api.us-east-1.amazonaws.com/prod/speech';
        const form = document.getElementById('ttsForm');
        const textInput = document.getElementById('textInput');
        const characterCount = document.getElementById('characterCount');
@@ -325,7 +325,7 @@
            if (isLoading) {
                generateBtn.textContent = '⏳ Generating...';
            } else {
-               generateBtn.textContent = '🎵 Generate Speech';
+               generateBtn.textContent = 'Convert Text to Speech';
            }
        }
        function showSuccess(data) {
@@ -341,7 +341,7 @@
 </audio>
 </div>
 <a href="${data.audioUrl}" download="speech.${getFileExtension(data.format)}" class="download-btn">
-                   📥 Download Audio
+                    Download Generated Audio
 </a>
 <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
 <em>Audio link expires at: ${new Date(data.expiresAt).toLocaleString()}</em>
