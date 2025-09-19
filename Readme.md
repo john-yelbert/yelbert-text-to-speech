@@ -20,6 +20,7 @@ This project deploys a serverless **Text-to-Speech (TTS)** system on AWS using:
 ---
 
 ## 📂 Project Structure
+```
 -backend
  ├── provider.tf
  ├── api.tf
@@ -31,6 +32,7 @@ This project deploys a serverless **Text-to-Speech (TTS)** system on AWS using:
  ├── lambda.zip 
 -frontend
  └── index.html
+ ```
 
  
 ---
