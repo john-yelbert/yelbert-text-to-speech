@@ -52,7 +52,9 @@ Initialize Terraform:
 terraform init
 ```
 Check Template Formatting:
+```
 terraform fmt
+```
 
 Validate configuration:
 ```
